@@ -1,0 +1,30 @@
+.form-control{
+width: 50vw !important;
+}
+.navbar {
+    display: flex !important;
+}
+
+.Heading{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+color: white;
+background-color:#232F3E ;
+}
+.carousel-inner{
+    height: 300px;
+    width: 100vw !important;
+}
+.dropdown{
+    display: none;
+    
+    
+}
+.CardsLeader{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}

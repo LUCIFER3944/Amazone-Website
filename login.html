@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+   <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <form id="loginForm">
+        <img src="Svgs/amazon-ar21.svg" alt="">
+        <label for="email">Email(phone for mobile accounts):</label>
+        <input type="email" id="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+
+        <button type="button" onclick="login()">Sign in</button>
+        <div id="createAccount">
+            <h6><span>New to Amazon?</span></h6>
+            <button id="newAccount" name="newAcct">Create your Amazon account</button>
+          </div>
+    </form>
+
+    <script src="login.js">
+      
+    </script>
+</body>
+</html>
