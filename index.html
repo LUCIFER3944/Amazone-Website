@@ -1,190 +1,500 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link media="screen and (max-width:480px)" rel="stylesheet" href="Phone.css"/>
-    <link media="screen and (max-width:820px)" rel="stylesheet" href="Tablet.css"/>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg" />
+    <title>Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in</title>
+
+    <!--css file-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 <body>
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand"><img src="Svgs/amazon-ar21.svg" alt=""></a>
-          <h6><span class="material-symbols-outlined">
-            location_on
-            </span>Update Location</h6>
-          <form class="d-flex" role="search">
-            <input  class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-warning" type="submit">Search</button>
-          </form>
-         <div><h6>EN <span class="material-symbols-outlined">
-            expand_more
-            </span></h6></div>
-            <h6>Hello,Vivek123<br>
-                Account & List</h6>
-            <h6>Returns<br>
-                 & Orders</h6>
-              <h6><span class="material-symbols-outlined">
-                shopping_cart
-                </span>Cart</h6>   
-           
-        </div>
-      </nav>
-      <div class="Heading">
-        <span class="material-symbols-outlined">
-            menu
-            </span>
-            <h6>Today's Deals</h6>
-            <h6>Mobiles</h6>
-            <h6>Electronics</h6>
-            <h6>Amazone miniTV</h6>
-            <h6>Sell</h6>
-            <h6>Amazone pay</h6>
-            <h6>Gift Card</h6>
-            <h6>coupons</h6>
-            <h6>Fashion</h6>
-            <h6>Amazone Business</h6>
-      </div>
-      <div>
-        <div class="dropdown">
-          <a class="btn btn-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <span class="material-symbols-outlined">
-              menu
-              </span>
-          </a>
-        
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Today's Deals</a></li>
-            <li><a class="dropdown-item" href="#">Mobiles</a></li>
-            <li><a class="dropdown-item" href="#">Electronics</a></li>
-            <li><a class="dropdown-item" href="#">Amazone miniTV</a></li>
-            <li><a class="dropdown-item" href="#">Sell</a></li>
-            <li><a class="dropdown-item" href="#">Amazone pay</a></li>
-          
-          </ul>
-        </div>
-      </div>
-      <div>
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <header class="header">
+        <div class="container container-header">
+            <div class="logo-container border-white">
+                <div class="logo"></div>
+                <span class="dotin">.in</span>
             </div>
-            <div class="carousel-inner ">
-              <div class="carousel-item active">
-                <img src="Images/D103625178_DesktopTallHero_3000x1200._CB574597993_.jpg" class="d-block w-100 " alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="Images/Desktop_Hero_3000x1200_2_2x._CB574373355_.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="Images/WhatsApp_Image_2024-01-06_at_23.40.38_1._CB585675433_.jpg" class="d-block w-100" alt="...">
-              </div>
+
+            <div class="address-container border-white">
+                <p class="hello">Deliver to</p>
+                <div class="icon-address">
+                    <i class="fa-solid fa-location-dot icon-location"></i>
+                    <p>Select your address</p>
+                </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div><br>
-      </div>
-      <div class="CardsLeader">
-        <div class="card" style="width: 18rem;">
-          <img src="Images/Classmate.jpg"card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">CLassmate</h5>
-            <p class="card-text">Drawing Book - Unruled, 36 Pages, 210 mm x 297 mm - Pack of 4</p>
-            <a href="#" class="btn btn-primary">Buy Now</a>
-          </div>
+
+            <div class="search-container">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input type="text" class="search-input" />
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+            </div>
+
+            <div class="language-container border-white">
+              
+                <div class="lauguge-image">
+                    <img
+                        src="https://media.istockphoto.com/vectors/vector-flag-of-the-republic-of-india-proportion-23-the-national-flag-vector-id1051236720?k=20&m=1051236720&s=612x612&w=0&h=ATObRTHmTosADa9zaB2dQPn_VAQmG1XYH2x92kzc304=" />
+                        <p>En </p><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                
+            </div>
+
+            <div class="login-container border-white">
+                <p>Hello,<span>sign in</span></p>
+                <p class="account">Account & Lists</p>
+            </div>
+
+            <div class="return-order-container">
+                <p>Returns
+                <div class="order">& Orders</div>
+                </p>
+            </div>
+
+            <div class="cart-container border-white">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-          <img src="Images/Classmate.jpg"card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">CLassmate</h5>
-            <p class="card-text">Drawing Book - Unruled, 36 Pages, 210 mm x 297 mm - Pack of 4</p>
-            <a href="#" class="btn btn-primary">Buy Now</a>
-          </div>
+    </header>
+
+    <!--navigation-->
+    <nav class="nav">
+        <div class="container container-nav">
+            <ul>
+                <li class="border-white" id="open-nav-sidebar">
+                    <span class="open-nav-slider">
+                        <i class="fa-solid fa-bars"></i>
+                        All
+                    </span>
+                </li>
+                <li class="border-white"><a href="#">Best Sellers</a></li>
+                <li class="border-white"><a href="#">Today's Deals</a></li>
+                <li class="border-white"><a href="#">Mobiles</a></li>
+                <li class="border-white"><a href="#">Customer Service</a></li>
+                <li class="border-white"><a href="#">Electronic</a></li>
+                <li class="border-white"><a href="#">Home & Kitchen</a></li>
+                <li class="border-white"><a href="#">Fashion</a></li>
+                <li class="border-white"><a href="#">Book</a></li>
+                <li class="border-white prime-image-hover">
+                    <a href="#">Prime</a>
+                    <div class="prime-image">
+                        <img
+                            src="https://m.media-amazon.com/images/G/31/prime/NavFlyout/TryPrime/2018/Apr/IN-Prime-PIN-TryPrime-MultiBen-Apr18-400x400._CB442254244_.jpg" />
+                    </div>
+
+                </li>
+            </ul>
+            <div class="nav-right-image-amazon-prime">
+                <img
+                    src="https://m.media-amazon.com/images/G/31/img17/Home/AmazonTV/Ravina/Desktop/Watch-Entertainment-for-FREE_400-x39._CB605460886_.jpg" />
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-          <img src="Images/Classmate.jpg"card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">CLassmate</h5>
-            <p class="card-text">Drawing Book - Unruled, 36 Pages, 210 mm x 297 mm - Pack of 4</p>
-            <a href="#" class="btn btn-primary">Buy Now</a>
-          </div>
+    </nav>
+
+    <!--sidebar navigation-->
+    <div class="sidebar-container-navigation" id="sidebar-container-navigation-id">
+        <div class="sidebar-left-part">
+            <div class="sidebar-top">
+                <i class="fa-solid fa-circle-user"></i>
+                <h2>Hello, <span>sign in</span></h2>
+            </div>
+            <div class="sidebar-wrap">
+                <div class="sidebar-item">
+                    <h2>Trending</h2>
+                    <p>Best Sellers</p>
+                    <p>New Releases</p>
+                    <p>Movers and Shakers</p>
+                </div>
+                <div class="sidebar-item">
+                    <h2>Digital Content And Devices</h2>
+                    <p>Echo & Alexa</p>
+                    <p>Fire TV</p>
+                    <p>Kindle E-Readers & eBooks</p>
+                    <p>Audible Audiobooks</p>
+                    <p>Amazon Prime Video</p>
+                    <p>Amazon Prime Music</p>
+                </div>
+                <div class="sidebar-item">
+                    <h2>Shop By Category</h2>
+                    <p>Mobiles, Computes</p>
+                    <p>TV, Appliances, Electronic</p>
+                    <p>Men's Fashion</p>
+                    <p>Women's Fashion</p>
+                    <p>See All</p>
+                </div>
+                <div class="sidebar-item">
+                    <h2>Programs & Features</h2>
+                    <p>Gift Cards & Mobile Recharges</p>
+                    <p>Flight Tickets</p>
+                    <p>#Foundlt-OnAmazon</p>
+                    <p>Clearance store</p>
+                </div>
+                <div class="sidebar-item">
+                    <h2>Help & Settings</h2>
+                    <p>Your Account</p>
+                    <p>Customer Service</p>
+                    <p>Sign in</p>
+                </div>
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-          <img src="Images/Classmate.jpg"card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">CLassmate</h5>
-            <p class="card-text">Drawing Book - Unruled, 36 Pages, 210 mm x 297 mm - Pack of 4</p>
-            <a href="#" class="btn btn-primary">Buy Now</a>
-          </div>
+        <button id="sidebar-navigation-close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+
+
+
+
+    <!--image slider -->
+    <section>
+        <div class="image-container">
+            <div class="image-list">
+                <div class="image-item">
+                    <img src="https://m.media-amazon.com/images/I/71cp9PVuTfL._SX3000_.jpg" />
+                </div>
+                <div class="image-item">
+                    <img src="https://m.media-amazon.com/images/I/61GnAucagBL._SX3000_.png" />
+                </div>
+                <div class="image-item">
+                    <img src="https://m.media-amazon.com/images/I/71qlKqpJnlL._SX3000_.jpg" />
+                </div>
+                <div class="image-item">
+                    <img src="https://m.media-amazon.com/images/I/71cQMXCLSvL._SX3000_.jpg" />
+                </div>
+                <div class="image-item">
+                    <img src="https://m.media-amazon.com/images/I/61aURrton0L._SX3000_.jpg" />
+                </div>
+                <div class="image-item">
+                    <img src="https://m.media-amazon.com/images/I/61O72XhcEkL._SX3000_.jpg" />
+                </div>
+                <div class="image-item">
+                    <img src="https://m.media-amazon.com/images/I/61VuJdpjvaL._SX3000_.jpg" />
+                </div>
+                <div class="image-item">
+                    <img src="https://m.media-amazon.com/images/I/61UrRx+3LLL._SX3000_.jpg" />
+                </div>
+            </div>
+
+            <div class="image-btn-container">
+
+                <button class="slider-btn" id="slide-btn-left"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="slider-btn" id="slide-btn-right"><i class="fa-solid fa-chevron-right"></i></i></button>
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-          <img src="Images/Classmate.jpg"card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">CLassmate</h5>
-            <p class="card-text">Drawing Book - Unruled, 36 Pages, 210 mm x 297 mm - Pack of 4</p>
-            <a href="#" class="btn btn-primary">Buy Now</a>
-          </div>
+    </section>
+
+
+    <!--product container card-->
+    <main class="main">
+        <div class="card-product-container container">
+            <div class="card-product">
+                <h2>Up to 60% off | Styles for Men</h2>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-1-186-116._SY116_CB636110853_.jpg" />
+                        <p>clothing</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-3-186-116._SY116_CB636110853_.jpg" />
+                        <p>Footwear</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_3._SY116_CB606110532_.jpg" />
+                        <p>Watches</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-4-186-116._SY116_CB636110853_.jpg" />
+                        <p>Bags & language</p>
+                    </div>
+                </div>
+                <button class="card-product-btn">see more</button>
+            </div>
+            <div class="card-product">
+                <h2>Redefine your living room</h2>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Furniture/furniture_node_1/372_232_03_low._SY116_CB605507312_.jpg" />
+                        <p>Sofa cum beds</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Furniture/furniture_node_1/372_232_04_low._SY116_CB605507312_.jpg" />
+                        <p>Office chairs & study</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Furniture/furniture_node_1/372_232_01_low._SY116_CB605507312_.jpg" />
+                        <p>Bean bags</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Furniture/furniture_node_1/372_232_02_low._SY116_CB605507312_.jpg" />
+                        <p>Explore all</p>
+                    </div>
+                </div>
+                <button class="card-product-btn">Visit our furniture store</button>
+            </div>
+            <div class="card-product">
+                <h2>Top rated, premium quality | Amazon Brands &</h2>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_1._SY116_CB606110532_.jpg" />
+                        <p>Home Products</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_5._SY116_CB606110532_.jpg" />
+                        <p>Furniture</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_3._SY116_CB606110532_.jpg" />
+                        <p>Daily essentials</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_8._SY116_CB606110532_.jpg" />
+                        <p>Fashion</p>
+                    </div>
+                </div>
+                <button class="card-product-btn">see more</button>
+            </div>
+            <div class="card-product">
+                <h2>Top rated, premium quality | Amazon Brands &</h2>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_1._SY116_CB606110532_.jpg" />
+                        <p>Home Products</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_5._SY116_CB606110532_.jpg" />
+                        <p>Furniture</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_3._SY116_CB606110532_.jpg" />
+                        <p>Daily essentials</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_8._SY116_CB606110532_.jpg" />
+                        <p>Fashion</p>
+                    </div>
+                </div>
+                <button class="card-product-btn">see more</button>
+            </div>
         </div>
-      </div>
-        <br>
-      <div class="CardsLeader">
-        <div class="card" style="width: 18rem;">
-          <img src="Images/Classmate.jpg"card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">CLassmate</h5>
-            <p class="card-text">Drawing Book - Unruled, 36 Pages, 210 mm x 297 mm - Pack of 4</p>
-            <a href="#" class="btn btn-primary">Buy Now</a>
-          </div>
+
+        <div class="card-product-container container productBackgraound">
+            <div class="card-product">
+                <h2>Top rated, premium quality | Amazon Brands &</h2>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_1._SY116_CB606110532_.jpg" />
+                        <p>Home Products</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_5._SY116_CB606110532_.jpg" />
+                        <p>Furniture</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_3._SY116_CB606110532_.jpg" />
+                        <p>Daily essentials</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_8._SY116_CB606110532_.jpg" />
+                        <p>Fashion</p>
+                    </div>
+                </div>
+                <button class="card-product-btn">see more</button>
+            </div>
+            <div class="card-product">
+                <h2>Top rated, premium quality | Amazon Brands &</h2>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_1._SY116_CB606110532_.jpg" />
+                        <p>Home Products</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_5._SY116_CB606110532_.jpg" />
+                        <p>Furniture</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_3._SY116_CB606110532_.jpg" />
+                        <p>Daily essentials</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_8._SY116_CB606110532_.jpg" />
+                        <p>Fashion</p>
+                    </div>
+                </div>
+                <button class="card-product-btn">see more</button>
+            </div>
+            <div class="card-product">
+                <h2>Top rated, premium quality | Amazon Brands &</h2>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_1._SY116_CB606110532_.jpg" />
+                        <p>Home Products</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_5._SY116_CB606110532_.jpg" />
+                        <p>Furniture</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_3._SY116_CB606110532_.jpg" />
+                        <p>Daily essentials</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_8._SY116_CB606110532_.jpg" />
+                        <p>Fashion</p>
+                    </div>
+                </div>
+                <button class="card-product-btn">see more</button>
+            </div>
+            <div class="card-product">
+                <h2>Top rated, premium quality | Amazon Brands &</h2>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_1._SY116_CB606110532_.jpg" />
+                        <p>Home Products</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_5._SY116_CB606110532_.jpg" />
+                        <p>Furniture</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_3._SY116_CB606110532_.jpg" />
+                        <p>Daily essentials</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_8._SY116_CB606110532_.jpg" />
+                        <p>Fashion</p>
+                    </div>
+                </div>
+                <button class="card-product-btn">see more</button>
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-          <img src="Images/Classmate.jpg"card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">CLassmate</h5>
-            <p class="card-text">Drawing Book - Unruled, 36 Pages, 210 mm x 297 mm - Pack of 4</p>
-            <a href="#" class="btn btn-primary">Buy Now</a>
-          </div>
+
+    
+    <!--today's deals -->
+    <section class="today_deals_container">
+        <div class="today_deals_heading">
+            <h1>Today's Deals</h1>
+            <p><a href="#">See all deals</a></p>
         </div>
-        <div class="card" style="width: 18rem;">
-          <img src="Images/Classmate.jpg"card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">CLassmate</h5>
-            <p class="card-text">Drawing Book - Unruled, 36 Pages, 210 mm x 297 mm - Pack of 4</p>
-            <a href="#" class="btn btn-primary">Buy Now</a>
-          </div>
+
+        <div class="today_deals_product_container">
+            <div class="today_deals_btn_container">
+                <button  class="today_deal_btn" id="today_deal_btn_prev">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <button class="today_deal_btn" id="today_deal_btn_next">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </div>
+
+            <div class="today_deals_product_list">
+                <div class="today_deals_product_item">
+                    <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
+                    <div class="discount_Contaienr">
+                        <a href="#">Up to 52% off</a>
+                        <a href="#">Deal of the day</a>
+                    </div>
+                    <p>adidas and Campus Footwear</p>
+                </div>
+
+                <div class="today_deals_product_item">
+                    <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
+                    <div class="discount_Contaienr">
+                        <a href="#">Up to 52% off</a>
+                        <a href="#">Deal of the day</a>
+                    </div>
+                    <p>adidas and Campus Footwear</p>
+                </div>
+
+                <div class="today_deals_product_item">
+                    <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
+                    <div class="discount_Contaienr">
+                        <a href="#">Up to 52% off</a>
+                        <a href="#">Deal of the day</a>
+                    </div>
+                    <p>adidas and Campus Footwear</p>
+                </div>
+
+                <div class="today_deals_product_item">
+                    <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
+                    <div class="discount_Contaienr">
+                        <a href="#">Up to 52% off</a>
+                        <a href="#">Deal of the day</a>
+                    </div>
+                    <p>adidas and Campus Footwear</p>
+                </div>
+
+                <div class="today_deals_product_item">
+                    <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
+                    <div class="discount_Contaienr">
+                        <a href="#">Up to 52% off</a>
+                        <a href="#">Deal of the day</a>
+                    </div>
+                    <p>adidas and Campus Footwear</p>
+                </div>
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-          <img src="Images/Classmate.jpg"card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">CLassmate</h5>
-            <p class="card-text">Drawing Book - Unruled, 36 Pages, 210 mm x 297 mm - Pack of 4</p>
-            <a href="#" class="btn btn-primary">Buy Now</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="Images/Classmate.jpg"card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">CLassmate</h5>
-            <p class="card-text">Drawing Book - Unruled, 36 Pages, 210 mm x 297 mm - Pack of 4</p>
-            <a href="#" class="btn btn-primary">Buy Now</a>
-          </div>
-        </div>
-      </div>
-      <div>
-        
-      </div>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </section>
+
+    </main>
+
+
+    
+
+
+
+
+
+
+
+    <script src="javascript.js" type="module"></script>
 </body>
+
 </html>
