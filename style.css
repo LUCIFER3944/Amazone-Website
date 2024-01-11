@@ -405,6 +405,7 @@ body {
 .main{
     position: relative;
     top:-350px;
+    
     /* background-color: rgb(196, 240, 240); */
     /* filter: blur(8px); */
     
@@ -415,6 +416,7 @@ body {
 .card-product-container{
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 
 }
